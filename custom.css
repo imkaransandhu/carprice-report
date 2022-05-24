@@ -172,7 +172,6 @@ small {
   padding: 10px;
 }
 
-
 .py-2 strong {
   font-family: "MavenProBold";
   color: var(--semi-dark-blue-color);
@@ -307,6 +306,30 @@ small {
   display: none;
 }
 
+@media print {
+  .footer,
+  .navbar-header,
+  .page-title-box,
+  .right-bar,
+  .vertical-menu {
+    display: none !important;
+  }
+
+  .card-body,
+  .main-content,
+  .page-content,
+  .right-bar,
+  body {
+    padding: 0;
+
+    margin: 0;
+  }
+
+  .card {
+    border: 0;
+  }
+}
+
 /* Medium Layout: 1200px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   :root {
@@ -403,11 +426,11 @@ small {
     top: 310px;
     left: 60px;
   }
-  
+
   .invoice-title img.float-end {
     top: 310px;
     right: 50px;
-    width: 150px  !important;
+    width: 150px !important;
   }
 
   /* table css */
@@ -479,12 +502,10 @@ small {
   .vehicle-safety strong {
     width: 56%;
   }
-  
 
   .vehicle-safety i {
     font-size: 20px !important;
   }
-
 
   .invoice-title img.float-end {
     top: 210px;
@@ -495,8 +516,6 @@ small {
   hr.my-4 {
     margin-top: 100px !important;
   }
-
-
 }
 
 /* Wide Mobile Layout: 480px. */
@@ -545,7 +564,6 @@ small {
   /* table css */
 
   /* Horizontal line  */
-
 }
 
 @media only screen and (max-width: 576px) {
@@ -579,12 +597,9 @@ small {
     text-align: center;
   }
 
-
   hr.my-4 {
     margin-top: 200px !important;
   }
-  
-
 }
 
 /* Mobile Layout: 320px. */
@@ -641,15 +656,11 @@ small {
     margin-top: 100px !important;
   }
 
-
   .invoice-title img.float-end {
     top: 380px;
   }
 
-
   hr.my-4 {
     margin-top: 200px !important;
   }
-
-
 }
