@@ -646,6 +646,9 @@ small {
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+    page-break-after: avoid-page;
+    page-break-before: avoid-page;
+    page-break-inside: avoid-page;
   }
 
   .invoice-title img.float-end {
@@ -673,6 +676,8 @@ small {
   .card {
     border: 0;
   }
+
+  
 
 
 }
