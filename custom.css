@@ -649,7 +649,7 @@ small {
   }
 
   .invoice-title img.float-end {
-    top: 440px;
+    top: 445px;
   }
 
   .footer,
@@ -674,5 +674,5 @@ small {
     border: 0;
   }
 
-  
+
 }
