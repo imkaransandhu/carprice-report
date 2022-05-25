@@ -78,6 +78,7 @@ tbody tr th:first-child {
 }
 
 .invoice-title {
+  /* content: url(./img/dollar-banner.png); */
   background-image: url(./img/dollar-banner.png);
   position: relative;
   background-position: 50% 45%;
@@ -304,30 +305,6 @@ small {
 /* Hiding the print button icon */
 .btn.btn-success.waves-effect.waves-light.me-1 i {
   display: none;
-}
-
-@media print {
-  .footer,
-  .navbar-header,
-  .page-title-box,
-  .right-bar,
-  .vertical-menu {
-    display: none !important;
-  }
-
-  .card-body,
-  .main-content,
-  .page-content,
-  .right-bar,
-  body {
-    padding: 0;
-
-    margin: 0;
-  }
-
-  .card {
-    border: 0;
-  }
 }
 
 /* Medium Layout: 1200px. */
@@ -663,4 +640,39 @@ small {
   hr.my-4 {
     margin-top: 200px !important;
   }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .invoice-title img.float-end {
+    top: 440px;
+  }
+
+  .footer,
+  .navbar-header,
+  .page-title-box,
+  .right-bar,
+  .vertical-menu {
+    display: none !important;
+  }
+
+  .card-body,
+  .main-content,
+  .page-content,
+  .right-bar,
+  body {
+    padding: 0;
+
+    margin: 0;
+  }
+
+  .card {
+    border: 0;
+  }
+
+  
 }
