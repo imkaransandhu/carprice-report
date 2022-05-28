@@ -677,7 +677,18 @@ small {
     border: 0;
   }
 
-  
+  .invoice-title .mb-4 img {
+    right: 50px;
+  }
 
+  .invoice-title h4.float-end.font-size-16 {
+    font-size: 60px !important;
+    right: 50px;
+    
+    text-align: right;
+  }
 
+  .vehicle-safety {
+    margin-top: 20px;
+  }
 }
